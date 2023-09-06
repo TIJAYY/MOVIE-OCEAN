@@ -28,12 +28,17 @@ const Carousel = ({ data, loading, endpoint, title }) => {
                 ? container.scrollLeft - (container.offsetWidth + 20)
                 : container.scrollLeft + (container.offsetWidth + 20);
 
+  
+     
+
         container.scrollTo({
             left: scrollAmount,
             behavior: "smooth",
         });
     };
 
+
+ 
     const skItem = () => {
         return (
             <div className="skeletonItem">
